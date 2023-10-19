@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Registration</title>
+    </head>
+    <body>
+    <div class="main">
+    <div class="login1">
+    <h1 class="h11">Qeydiyyat</h1>
+      <form method="post" action="{{ route('Registration') }}" autocomplete="off"  >
+        @csrf
+        <div class="">
+          <label class="lbl1">Ad</label><br/>
+          <input class="input" id="name" type="text" maxlength="50" name="name" required>
+          <span></span>
+        </div>
+        <div class="">
+        <label class="lbl2">Soyad</label> <br/>
+        <input class="input" id="name" type="text" maxlength="50" name="name" required>
+        <span></span>
+        </div>
+
+        <div class="">
+          <label class="lbl3">Email</label> <br>
+          <input class="input" id="email" type="email" maxlength="50" name="email" required>
+          <span></span>
+        </div>
+    
+        <div class="">
+          <label class="lbl3">Şifrə</label> <br/>
+          <input class="input" id="password" type="password" maxlength="50" name="password" required>
+          <span></span>
+        </div>
+        <div class="">
+          <label class="lbl4">Doğum tarixi</label> <br/>
+          <input class="input" id="date" type="date" maxlength="50" name="date" required>
+          <span></span>
+        </div>
+        
+        <button class="btn1" type="submit">Qeydiyyat</button>
+      </form>
+      
+    
+    </div>
+</div>
+</body>
+</html>
+
+
